@@ -32,11 +32,14 @@ function getGiphy() {
 
 }
 // Run an array of buttons to be connected to the Giphy API. 
-// When clicked, buttons should generate 10 new Gifs based off of the button name.
+
 $(document).ready(function(){
+  $('#buttons').click(getGiphy); //getGiphy function is being called.
   var animals = ["squirrel", "chipmunk", "rabbit", "raccoon"];
   for (var i = 0; i< animals.length; i++) {
       var buttons = $('<button>' + animals[i] + '</button>')
       buttons.appendTo('#buttons');
   }
 })
+// at this time, animal buttons generate only one new gif if a search term has been put into the input. This is not ideal.
+// When clicked, buttons should generate 10 new Gifs based off of the button name...to be continued....
