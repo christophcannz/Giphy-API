@@ -1,1 +1,3 @@
 # Giphy-API
+
+The end goal of this app was to create a search bar that allowed the user to search for any gif they wanted. When they clicked "Get a Gif", a new gif featuring the requested subject would load. This app also includes four additional buttons that were meant to generate gifs of common animals that you would see in your backyard. I was able to link them with the AJAX call, however, at this time, they fail to generate they correct amount of gifs that match up with the button titles. They will generate a new gif you have a search term filled into the input field.
