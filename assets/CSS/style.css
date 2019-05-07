@@ -1,18 +1,17 @@
 body {
-    background-color: whitesmoke;
-    font-family: 'Courier New', Courier, monospace;
-    color: darkblue;
-}
-
-header {
-    width: 100%;
-    height: 50px;;
-    background-color: darkblue;
+    background-image: url("../images/grass.jpg");
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: black;
 }
 
 h1 {
-    color: whitesmoke;
+    color: black;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 
 .container {
     margin: 20px;

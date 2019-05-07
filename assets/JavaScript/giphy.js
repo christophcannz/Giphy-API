@@ -16,26 +16,25 @@ function getGiphy() {
   .then(data => data.json())
   .then (res => {
     console.log(res)
-
+// Search bar which will fetch a new gif based off of the search query.
     var arrayOfGifs = res.data
     var rand = Math.floor(Math.random() * arrayOfGifs.length);
     var firstItem = arrayOfGifs[rand]
     var giphyLink = firstItem.images.fixed_width.url
     document.querySelector("#gif").setAttribute("src", giphyLink);
   })
-
   
-  // Pick a gif from the search term.
-  // make that gif appear on the page.
+  // make the AJAX Call...
   $.ajax({
   url: testUrl,
   method: "GET"
   }) 
 
 }
-
+// Run an array of buttons to be connected to the Giphy API. 
+// When clicked, buttons should generate 10 new Gifs based off of the button name.
 $(document).ready(function(){
-  var animals = ["squirrel", "chipmunk", "rabbit"];
+  var animals = ["squirrel", "chipmunk", "rabbit", "raccoon"];
   for (var i = 0; i< animals.length; i++) {
       var buttons = $('<button>' + animals[i] + '</button>')
       buttons.appendTo('#buttons');
